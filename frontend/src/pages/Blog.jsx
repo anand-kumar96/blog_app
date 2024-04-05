@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { getBlogById } from '../api/Api';
 const Blog = () => {
   let {id} = useParams();
-  const apiUrl = 'http://localhost:3000/'
+  const apiUrl = 'https://blog-app-q6m0.onrender.com/'
   const[blog,setBlog] = useState(null);
   useEffect(()=>{
     const getBlog= async() =>{

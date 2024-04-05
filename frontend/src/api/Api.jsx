@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiUrl = 'http://localhost:3000'
+const apiUrl = 'https://blog-app-q6m0.onrender.com'
 
 // getAllBlogs
 export const getBlogs = async() => {
@@ -34,14 +34,9 @@ export const uploadFile = async (file) => {
       .catch((err)=> err);
 };
 
-/// GetBlog
+/// GetBlogById
 export const getBlogById = async(id) => {
     return await axios.get(`${apiUrl}/blogs/${id}`)
     .then((res)=> res.data)
     .catch((err)=> err);
 };
-
-//getBlogById
-//createBlog
-//updateBlog
-//deleteBlog

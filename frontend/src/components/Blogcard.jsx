@@ -5,7 +5,7 @@ import { formatedDescription } from '../utlis/text-format';
 import { IoApps } from "react-icons/io5";
 
 const Blogcard = (props) => {
-    const apiUrl = 'http://localhost:3000/'
+    const apiUrl = 'https://blog-app-q6m0.onrender.com/'
     const {blog} = props;
     return (
         <div className='bg-white shadow-md overflow-hidden rounded-xl'>

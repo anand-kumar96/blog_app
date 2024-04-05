@@ -3,21 +3,8 @@ import Blogcard from '../components/Blogcard'
 import { getBlogByCategory, getBlogs } from '../api/Api'
 import { useSearchParams } from "react-router-dom";
 const Home = () => {
-  let [searchParams, setSearchParams] = useSearchParams();
   const [blogs,setBlogs] = useState(null)
-
-    //  useEffect(()=>{
-    //     const fetchData = async () => {
-    //         try {
-    //           const {data} = await getBlogs();
-    //           setBlogs(data)
-    //         } catch (error) {
-    //           console.error('Error fetching data:', error);
-    //         }
-    //     };
-
-    //     fetchData();
-    //  },[])
+  let [searchParams, setSearchParams] = useSearchParams();
 
     /// All Blogs Or Filter blogs
      useEffect(()=>{
@@ -37,72 +24,6 @@ const Home = () => {
         fetchData();
      },[searchParams])
 
-
-    // const data = [
-    //     {
-    //         title:'Is it worth investing in real estate ? Advantages and disadvantages',
-    //         imageUrl:'https://picsum.photos/id/200/500/200',
-    //         description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...',
-    //         createdAt:'24 Jan, 2024',
-    //         comments:'0'
-    //     },
-    //     {
-    //         title:'Is it worth investing in real estate ? Advantages and disadvantages',
-    //         imageUrl:'https://picsum.photos/id/208/500/200',
-    //         description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...',
-    //         createdAt:'24 Jan, 2024',
-    //         comments:'0'
-    //     },
-    //     {
-    //         title:'Is it worth investing in real estate ? Advantages and disadvantages',
-    //         imageUrl:'https://picsum.photos/id/10/500/200',
-    //         description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...',
-    //         createdAt:'24 Jan, 2024',
-    //         comments:'0'
-    //     },
-    //     {
-    //         title:'Is it worth investing in real estate ? Advantages and disadvantages',
-    //         imageUrl:'https://picsum.photos/id/206/500/200',
-    //         description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...',
-    //         createdAt:'24 Jan, 2024',
-    //         comments:'0'
-    //     },
-    //     {
-    //         title:'Is it worth investing in real estate ? Advantages and disadvantages',
-    //         imageUrl:'https://picsum.photos/id/15/500/200',
-    //         description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...',
-    //         createdAt:'24 Jan, 2024',
-    //         comments:'0'
-    //     },
-    //     {
-    //         title:'Is it worth investing in real estate ? Advantages and disadvantages',
-    //         imageUrl:'https://picsum.photos/id/204/500/200',
-    //         description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...',
-    //         createdAt:'24 Jan, 2024',
-    //         comments:'0'
-    //     },
-    //     {
-    //         title:'Is it worth investing in real estate ? Advantages and disadvantages',
-    //         imageUrl:'https://picsum.photos/id/203/500/200',
-    //         description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...',
-    //         createdAt:'24 Jan, 2024',
-    //         comments:'0'
-    //     },
-    //     {
-    //         title:'Is it worth investing in real estate ? Advantages and disadvantages',
-    //         imageUrl:'https://picsum.photos/id/202/500/200',
-    //         description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...',
-    //         createdAt:'24 Jan, 2024',
-    //         comments:'0'
-    //     },
-    //     {
-    //         title:'Is it worth investing in real estate ? Advantages and disadvantages',
-    //         imageUrl:'https://picsum.photos/id/201/500/200',
-    //         description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...',
-    //         createdAt:'24 Jan, 2024',
-    //         comments:'0'
-    //     },
-    // ]
 
   return (
     <div>
