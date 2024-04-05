@@ -1,0 +1,9 @@
+body{
+  background-color: aliceblue;
+}
+/* .active {
+  color: grey;
+} */
+.ql-editor{
+  min-height: 150px;
+}
