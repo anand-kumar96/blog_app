@@ -29,10 +29,6 @@ const storage = multer.diskStorage({
   res.send(req.file);
 });
 
-const PORT = 5000; // Use the environment variable or default to 5000
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
 
 module.exports = app;
     
